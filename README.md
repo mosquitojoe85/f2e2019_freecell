@@ -1,6 +1,6 @@
 ## F2E 精神時光屋 2019 第二關 接龍
 
-主觀認為完成度：30 %
+主觀認為完成度：25 %
 
 - 設計：使用 Daphne 的[設計稿](https://challenge.thef2e.com/user/2104?schedule=2826#works-2826)
 - 技術： react.js、create-react-app、SCSS
