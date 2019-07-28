@@ -1,0 +1,14 @@
+@import "../../libs/_var.scss";
+
+.listBlock {
+  width: 95px;
+  height: 145px;
+  border: 1px solid fade-out($lightGray, 0.4);
+  border-radius: 5px;
+  position: relative;
+  .cardBlock {
+    position: absolute;
+    width: 100%;
+  }
+
+}

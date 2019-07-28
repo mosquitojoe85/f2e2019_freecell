@@ -1,0 +1,13 @@
+@import "../../libs/_var.scss";
+
+.card {
+  border-radius: 5px;
+  background-color: $white;
+  cursor: pointer;
+  border: 1px solid $deepGray;
+  width: calc(100% + 2px);
+  margin: -1px 0 0 -1px;
+  img {
+    width: 100%;
+  }
+}
