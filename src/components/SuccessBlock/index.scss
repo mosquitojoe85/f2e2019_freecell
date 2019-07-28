@@ -1,0 +1,18 @@
+@import "../../libs/_var.scss";
+
+.successBlock {
+  height: 145px;
+  width: 95px;
+  background-color: fade-out($lightGray, 0.4);
+  border-radius: 5px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & ~ & {
+    margin-left: $spacer*3;
+  }
+  img {
+    width: 35px;
+  }
+}

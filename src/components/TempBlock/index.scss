@@ -1,0 +1,22 @@
+@import "../../libs/_var.scss";
+
+.tempBlock {
+  height: 145px;
+  width: 95px;
+  border: 1px solid fade-out($lightGray, 0.4);
+  border-radius: 5px;
+  & ~ & {
+    margin-left: $spacer*3;
+  }
+  .card {
+    border-radius: 5px;
+    background-color: $white;
+    border: 1px solid $deepGray;
+    cursor: pointer;
+    width: calc(100% + 2px);
+    margin: -1px 0 0 -1px;
+    img {
+      width: 100%;
+    }
+  }
+}

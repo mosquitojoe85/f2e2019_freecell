@@ -1,6 +1,7 @@
 @import "./libs/_var.scss";
 
 *:focus { outline: none; }
+div { box-sizing: border-box; }
 
 .appWrapper {
   min-height: 100vh;
@@ -16,11 +17,42 @@
     flex-direction: column;
     .gameBlock {
       flex: 1;
+      margin: $spacer*10 $spacer*23 $spacer*4;
+      .game_topBlock {
+        margin-bottom: $spacer*6;
+        display: flex;
+        .leftTempBlock {
+          flex: none;
+          display: flex;
+        }
+        .center {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          img {
+            width: 47px;
+          }
+          h1 {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+        .rightSuccessBlock {
+          flex: none;
+          display: flex;
+        }
+      }
+      .game_bottomBlock {
+        display: flex;
+        justify-content: space-between;
+      }
 
     }
     .navBlock {
       flex: none;
-      margin: 0 $spacer*3;
+      margin: 0 $spacer*20;
       padding: $spacer*4 0;
       border-top: 1px solid $deepGray;
       display: flex;
