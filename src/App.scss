@@ -1,0 +1,66 @@
+@import "./libs/_var.scss";
+
+*:focus { outline: none; }
+
+.appWrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app {
+    height: 800px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    .gameBlock {
+      flex: 1;
+
+    }
+    .navBlock {
+      flex: none;
+      margin: 0 $spacer*3;
+      padding: $spacer*4 0;
+      border-top: 1px solid $deepGray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      .leftCol {
+        display: flex;
+        align-items: center;
+        .nav_infoBtn {
+          width: 40px;
+          height: 40px;
+          border: 2px solid $black;
+          border-radius: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          img {
+            width: 50%;
+          }
+        }
+        .nav_time {
+          margin-left: $spacer*2;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .nav_score {
+          margin-left: $spacer*4;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      .rightCol {
+        display: flex;
+
+      }
+    }
+  }
+}
+
+
+
